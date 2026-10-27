@@ -1,3 +1,5 @@
+![student-management-system dashboard](./screenshots/dashboard.png)
+
 # 🎓 Student Management System
 
 A full-stack web application designed to help training institutes manage students, courses, and student records through a simple and responsive dashboard.
