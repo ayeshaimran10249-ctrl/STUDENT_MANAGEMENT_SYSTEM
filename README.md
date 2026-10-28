@@ -145,7 +145,7 @@ Keep your database credentials and secret configuration in `.env` files. Do not 
 
 The frontend can be deployed on Vercel. The backend must also be hosted on a server that supports Node.js, and the frontend API URL must point to the deployed backend.
 
-**Live Demo:** COMING SOON
+**Live Demo:**   [Click here to view Student_Managemnet_System](https://student-management-system-f5q1.vercel.app/)
 
 ## 👩‍💻 Author
 
