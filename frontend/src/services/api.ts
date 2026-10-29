@@ -1,11 +1,11 @@
 
-const API_URL = import.meta.env.VITE_API_URI;
+const API_URI = import.meta.env.VITE_API_URI;
 
 export async function apiRequest<T>(
   endpoint: string,
   options: RequestInit = {}
 ): Promise<T> {
-  const response = await fetch(`${API_URL}${endpoint}`, {
+  const response = await fetch(`${API_URI}${endpoint}`, {
     ...options,
     headers: {
       "Content-Type": "application/json",
