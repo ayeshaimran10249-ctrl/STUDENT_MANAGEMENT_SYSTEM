@@ -1,5 +1,5 @@
 
-const API_URL = import.meta.env.VITE_API_URI;
+const API_URL = import.meta.env.VITE_BACKEND_URL;
 
 export async function apiRequest<T>(
   endpoint: string,
