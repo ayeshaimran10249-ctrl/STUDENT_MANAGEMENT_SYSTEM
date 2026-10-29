@@ -30,7 +30,15 @@ app.use(async (req, res, next) => {
 app.get('/', (req, res) => {
   res.json({ message: 'Student Management API is running!' })
 })
-
+// MongoDB connection test
+app.get('/test-db', async (req, res) => {
+  try {
+    const result = await mongoose.connection.db.admin().ping()
+    res.json({ message: 'MongoDB connected', result })
+  } catch (error) {
+    res.status(500).json({ error: error.message })
+  }
+})
 // API routes
 app.use('/api/students', studentsRouter)
 app.use('/api/courses', coursesRouter)
