@@ -18,7 +18,7 @@ app.use(express.json())
 app.use(async (req, res, next) => {
   try {
     if (mongoose.connection.readyState !== 1) {
-      await mongoose.connect(process.env.MONGODB_URI)
+      await mongoose.connect(process.env.MONGO_URI)
     }
     next()
   } catch (error) {
